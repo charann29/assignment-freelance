@@ -1,4 +1,4 @@
-# This is web page is live at [https://charann29.github.io/assignment-freelance/]
+This is web page is live at [https://charann29.github.io/assignment-freelance/]
 
 
 # Getting Started with Create React App
