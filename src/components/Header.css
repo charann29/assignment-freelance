@@ -1,0 +1,24 @@
+.header{
+  padding: 10px 30px;
+  background-color: black;
+
+
+}
+.headerTitle{
+    font-size: 60px;
+    text-align: center;
+    margin:10px;
+    font-weight: bold;
+}
+.header>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.header>div>p{
+  /* line-height: 1.8px; */
+  font-size: 20px;
+  font-weight: bold;
+
+}
