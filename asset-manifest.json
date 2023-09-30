@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/assignment-freelance/static/css/main.8326bb20.css",
+    "main.js": "/assignment-freelance/static/js/main.0ed0c33b.js",
+    "index.html": "/assignment-freelance/index.html",
+    "main.8326bb20.css.map": "/assignment-freelance/static/css/main.8326bb20.css.map",
+    "main.0ed0c33b.js.map": "/assignment-freelance/static/js/main.0ed0c33b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8326bb20.css",
+    "static/js/main.0ed0c33b.js"
+  ]
+}
