@@ -2,7 +2,7 @@ import React from 'react';
 import Header from  './components/Header.js'
 import './App.css'
 import CustomCard from './components/CustomCard.js';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Image from './Image.js';
 
 
@@ -10,15 +10,15 @@ import Image from './Image.js';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Home></Home>} path='/'>
 
         </Route>
         <Route element={<Image></Image>} path='/output'></Route>
       </Routes>
-    </BrowserRouter>
-    
+    </HashRouter>
+
   );
 }
 
@@ -31,13 +31,13 @@ function Home(){
         <Header></Header>
         <div style={{marginTop:'40px'}}></div>
         {/* <CustomCard data={sampleData[0]}></CustomCard> */}
-     
+
         <div className='fl'>
           {
             sampleData.map((da,ind)=><CustomCard headerName={headerData[ind]} data={sampleData[ind]}></CustomCard>)
           }
           </div>
-     
+
     </div>
   )
 }
@@ -47,7 +47,7 @@ const headerData=['HW1 - Home Page','HW2 - Database Basic SQL Queries','HW3 - Ba
 const sampleData=[
   [{
     webpage:'code',
-   
+
   }],
   [
     {
@@ -85,16 +85,16 @@ const sampleData=[
     {
       code:''
     }
-  ], 
+  ],
   [
-   
+
     {
       code:'',
       output:''
     }
   ],
   [
-   
+
     {
       code:'',
       output:''
