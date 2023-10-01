@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React to HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            color: white;
+        }
+
+        .header {
+            padding: 20px 30px 0px 30px;
+            /* padding-top: 10px; */
+            background-color: black;
+        }
+
+        .headerTitle {
+            font-size: 50px;
+            text-align: center;
+            margin: 0px;
+            font-weight: bold;
+        }
+
+        .header>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .header>div>p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .customCard {
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            border-radius: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            /* flex-basis: calc(10% - 40px); 25% width with 40px of gap */
+            margin: 20px;
+        }
+
+        .top {
+            border-radius: 2px solid blue;
+            background-color: black;
+            padding: 5px 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 255, 0.253);
+            /* border-top-left-radius: 20px;
+            border-top-right-radius: 20px; */
+        }
+
+        .fl {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            /* Spread cards evenly */
+        }
+
+        .top>p {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .bottom {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0px;
+            flex: 1;
+        }
+
+        .FlastList {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 15px;
+            justify-content: center;
+        }
+
+        .FlastList button {
+            outline: none;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: wheat;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Component -->
+    <div class="header">
+        <p class="headerTitle">User Name 1</p>
+        <div>
+            <p style="padding-left: 10px;">CS 541 - Assignment</p>
+            <p style="padding-right: 10px;">Database Systems</p>
+        </div>
+
+    </div>
+
+    <!-- CustomCard Component -->
+    <div class="fl">
+        <div class="customCard">
+            <div class="top">
+                <p>Header Name</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="https://www.linkedin.com/notifications/?filter=all">
+                        <button>Code</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="customCard">
+            <div class="top">
+                <p>HW2 - Database Basic SQL Queries</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>HW3 - Basic Queries SQL</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>HW4 - Project Ideas & Complex SQL</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>HW5 - Relational Algebra & calculus</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>HW6 - E-R Model</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>HW7 - EER Model</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>HW8 - File Structures</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+                    <a href="#">
+                        <button>Output</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>Project Report</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="customCard">
+            <div class="top">
+                <p>Project Download</p>
+            </div>
+            <div class="bottom">
+                <!-- FlastList Component -->
+                <div class="FlastList">
+                    <a href="#">
+                        <button>Code</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Add more CustomCard components here if needed -->
+
+</body>
+
+</html>
